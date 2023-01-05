@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "scribbleNotes_backend": {
+      "main": "src/scribbleNotes_backend/main.mo",
+      "type": "motoko"
+    },
+    "scribbleNotes_frontend": {
+      "dependencies": [
+        "scribbleNotes_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/scribbleNotes_frontend/src/index.html"
+      },
+      "source": [
+        "src/scribbleNotes_frontend/assets",
+        "dist/scribbleNotes_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
