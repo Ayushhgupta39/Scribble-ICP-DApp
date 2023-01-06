@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Note from "./components/Note";
-import CreateArea from "./components/CreateArea";
+import CreateArea from "./CreateArea";
+import Footer from "./Footer";
+import Header from "./Header";
+import Note from "./Note";
+
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -28,12 +29,11 @@ function App() {
       {notes.map((noteItem, index) => {
         return (
           <Note
-            key={index}
+          key={index}
             id={index}
             title={noteItem.title}
             content={noteItem.content}
-            onDelete={deleteNote}
-          />
+            onDelete={deleteNote} />
         );
       })}
       <Footer />
