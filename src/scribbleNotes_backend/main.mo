@@ -21,7 +21,6 @@ actor scribbleNotes {
 
     // Assigning the value of newNote to the notes list
     notes := List.push(newNote, notes);
-    Debug.print(debug_show(notes));
 
   };
 
